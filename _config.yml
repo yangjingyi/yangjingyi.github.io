@@ -12,18 +12,18 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Shiyu's Blog
+      title: Jingyi's Blog
 
 description: Stylish Jekyll Theme
 author:
-  name: Shiyu
-  email: lishiyu.thierry@gmail.com
-  github: gathierry
+  name: Jingyi
+  email: yangjingyi0730@163.com
+  github: yangjingyi
   twitter: 
   pinterest: 
-  linkedin: shiyu-li/a0/360/a43
-  bio: You'll never walk alone!
-  email_md5: eb93e52aa089150ffe7add778b19569f 
+  linkedin: 静怡-杨/105/556/74a
+  bio: To be an engineer!
+  email_md5: 9780a09aba2e659c794a0ba23cc9edcc 
 
 rss_path: feed.xml
 categories_path: categories.html
