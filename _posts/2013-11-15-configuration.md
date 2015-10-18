@@ -6,18 +6,18 @@ tags: [C--, C#, Digital Image Processing]
 fullview: true
 ---
 
-#简介C--及下载
+# 简介C--及下载
 首先介绍一下C--， 这是基于C#的一种语言，可以简单的导入图片并进行处理，下载exe文件链接：
-[pan.baidu.com/s/1i34Ksqp]http://pan.baidu.com/s/1i34Ksqp
-#简单程序实现
-###C--导入图片
+[pan.baidu.com/s/1i34Ksqp](http://pan.baidu.com/s/1i34Ksqp)
+# 简单程序实现
+### C--导入图片
 只用一小段程序就能实现导入图片啦~
 'void main(){
 	byte[,] f = LoadImg();
 	ShowImg("f",f);
 }'
-###C--实现图像的算术运算
-####Addition
+### C--实现图像的算术运算
+#### Addition
 'byte[,] add(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f1.GetLength(1);
@@ -36,9 +36,9 @@ void main(){
 	ShowImg("Addition",add(f1,f2));
 }'
 其中尤其*byte*不能少，因为要强制转换类型double到byte
-结果图为
-![Addition](D:/课程学习/Digital Image Processing/Program/Addition.png)
-####Subtraction
+
+
+#### Subtraction
 'byte[,] sub(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f1.GetLength(1);
@@ -56,7 +56,7 @@ void main(){
 	ShowImg("f2",f2);
 	ShowImg("Subtraction",sub(f1,f2));
 }'
-####Multiplition
+#### Multiplition
 'byte[,] mul(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f2.GetLength(1);
@@ -80,7 +80,7 @@ void testMul(){
 void main(){
 	testMul();
 }'
-####Division
+#### Division
 'byte[,] div(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f2.GetLength(1);
@@ -104,7 +104,7 @@ void testDiv(){
 void main(){
 	testDiv();
 }'
-####Effect
+#### Effect
 'byte[,] createLightEffect(int w,int h){
 	byte[,] g = new byte[w,h];
 
