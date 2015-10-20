@@ -5,7 +5,6 @@ categories: [general, setup, demo]
 tags: [C--, C#, Digital Image Processing]
 fullview: true
 ---
-
 # 简介C--及下载
 >首先介绍一下C--， 这是基于C#的一种语言，可以简单的导入图片并进行处理，下载exe文件链接：
 [pan.baidu.com/s/1i34Ksqp](http://pan.baidu.com/s/1i34Ksqp)
@@ -20,7 +19,7 @@ fullview: true
 
 ### C--实现图像的算术运算
 #### Addition
-     	byte[,] add(byte[,] f1, byte[,] f2){
+    byte[,] add(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f1.GetLength(1);
 	byte[,] g = new byte[w,h];
@@ -36,12 +35,12 @@ fullview: true
 	ShowImg("f1",f1);
 	ShowImg("f2",f2);
 	ShowImg("Addition",add(f1,f2));
-    	}
+    }
 其中尤其*byte*不能少，因为要强制转换类型*double*到*byte*
 
 
 #### Subtraction
-     	byte[,] sub(byte[,] f1, byte[,] f2){
+	byte[,] sub(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f1.GetLength(1);
 	byte[,] g = new byte[w,h];
@@ -59,7 +58,7 @@ fullview: true
 	ShowImg("Subtraction",sub(f1,f2));
 	}	
 #### Multiplition
-     	byte[,] mul(byte[,] f1, byte[,] f2){
+	byte[,] mul(byte[,] f1, byte[,] f2){
 	int w = f1.GetLength(0);
 	int h = f2.GetLength(1);
 
@@ -129,7 +128,7 @@ fullview: true
 	}
 #### Creat a picture with noise
 	//首先导入一张名为f1的图片
-     	byte[,] addNoise(byte[,] f1){
+	byte[,] addNoise(byte[,] f1){
 		int w = f1.GetLength(0);
 		int h = f1.GetLength(1);
 		byte[,] g = new byte[w,h];
@@ -149,7 +148,7 @@ fullview: true
 	}
 从图片中我们可以发现，图片质量有所降低。
 #### Creat series of pictures with noise
-     	byte[,] addNoise(byte[,] f){
+	byte[,] addNoise(byte[,] f){
 		int w = f.GetLength(0);
 		int h = f.GetLength(1);
 		byte[,] g = new byte[w,h];
@@ -181,7 +180,7 @@ fullview: true
 		testNoiseS();
 	}
 #### 对一组加噪图片求平均
-     	byte[,] addNoise(byte[,] f){
+	byte[,] addNoise(byte[,] f){
 		int w = f.GetLength(0);
 		int h = f.GetLength(1);
 		byte[,] g = new byte[w,h];
